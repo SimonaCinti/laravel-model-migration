@@ -14,3 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index')->name('homepage');
+
+Route::get('/store', 'CarController@store')->name('store-car');

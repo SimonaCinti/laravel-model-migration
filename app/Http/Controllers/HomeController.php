@@ -14,12 +14,20 @@ class HomeController extends Controller
 
      public function index() {
 
-        // Get data from DB
+        //! Get data from DB - all data
 
         $cars =  Car::all();
         
-        dump($cars);
+        // dump($cars);
+        
+        //! Get data from DB - filter with where
 
+        $bestCar = Car::where('modello','fiesta')
+            ->get();
+        
+        // dump($bestCar);
+
+        // Return
         return view('home', compact('cars'));
      }
 }
