@@ -8,17 +8,17 @@ use App\Car;
 
 class CarController extends Controller
 {
-    public function store(){
+    // public function store(){
 
-        // Create a new car on the route /store
-        $car = new Car();
+    //     // Create a new car on the route /store
+    //     $car = new Car();
 
-        $car->marca = 'Ferrari';
-        $car->modello = 'F46';
-        $car->targa = 'L0R3M42';
+    //     $car->marca = 'Ferrari';
+    //     $car->modello = 'F46';
+    //     $car->targa = 'L0R3M42';
 
-        $car->save();
+    //     $car->save();
 
-        echo 'Car Created';
-    }
+    //     echo 'Car Created';
+    // }
 }
