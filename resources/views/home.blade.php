@@ -5,5 +5,13 @@
 
     <h2> Car page</h2>
 
-    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus commodi consequatur soluta quo. Rerum, atque?</p>
+    <ul>
+        @foreach ($cars as $car)
+            <li>
+                <h3>{{ $car->modello }}</h3>
+                <div class="brand">{{ $car->marca }}</div>
+                <div class="plate">{{ $car->targa }}</div>
+            </li>
+        @endforeach
+    </ul>
 @endsection
