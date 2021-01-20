@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index')->name('homepage');
 
-Route::get('/store', 'CarController@store')->name('store-car');
+Route::get('/store', 'CarController@store')->name('store-car'); // Pagina non attiva usata solo per testare inserimento data nel db
